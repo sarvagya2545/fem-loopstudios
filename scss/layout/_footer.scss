@@ -1,0 +1,43 @@
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 4rem 12rem;
+
+    .brand__img, .brand {
+        height: 24px;
+    }
+
+    &__top, &__bottom {
+        @include flex(row, space-between, center);
+    }
+
+    &__top {
+        margin-bottom: 2rem;
+    }
+
+    &__bottom {
+        margin-top: 2rem;
+    }
+
+    &__social {
+        display: flex;
+        font-size: 24px;
+
+        &-icon + &-icon {
+            margin-left: 12px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link-item + &__link-item {
+        margin-left: 2.4rem;
+    }
+
+    &__copyright {
+        color: $col-very-dark-grey;
+    }
+}

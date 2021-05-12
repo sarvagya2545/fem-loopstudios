@@ -1,0 +1,60 @@
+.hero {
+	height: 65rem;
+	background: url("../../images/desktop/image-hero.jpg");
+	background-position: 50% 50%;
+	color: $col-white;
+	padding: 6rem 10rem;
+	position: relative;
+
+	@include flex(column, space-between, stretch);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($color: #000000, $alpha: 0.3);
+	}
+
+	* {
+		z-index: 1;
+	}
+
+	&__heading {
+		display: block;
+		position: relative;
+		
+        width: 50%;
+		min-width: 60rem;
+        height: fit-content;
+
+		padding: 3rem;
+		margin-bottom: 7rem;
+		
+        border: 2px solid $col-white;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+
+		&-item {
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		&-item + &-item {
+			margin-left: 3rem;
+		}
+	}
+}

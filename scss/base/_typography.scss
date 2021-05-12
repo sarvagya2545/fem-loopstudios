@@ -1,0 +1,34 @@
+.hero {
+    font-family: $font-2;
+}
+
+.heading-primary,
+.heading-secondary {
+    text-transform: uppercase;
+    font-family: $font-1;
+}
+
+.heading-primary {
+    font-size: 7.5rem;
+}
+
+.heading-secondary {
+    font-size: 5rem;
+}
+
+.copy__para {
+    font-family: $font-2;
+    color: $col-dark-grey;
+}
+
+.creations__card-text {
+    font-family: $font-1;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.footer {
+    font-family: $font-2;
+    font-size: 1.4rem;
+}
