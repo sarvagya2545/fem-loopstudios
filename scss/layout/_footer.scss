@@ -33,6 +33,11 @@
         font-size: 24px;
         justify-content: flex-end;
 
+        &-icon {
+            cursor: pointer;
+            @include underline_animation;
+        }
+
         &-icon + &-icon {
             margin-left: 12px;
         }
@@ -51,6 +56,11 @@
             justify-content: center;   
             font-size: 2rem;
         }
+    }
+
+    &__link-item {
+        cursor: pointer;
+        @include underline_animation;
     }
 
     &__link-item + &__link-item {

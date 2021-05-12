@@ -10,3 +10,27 @@
     animation-duration: $duration;
     animation-fill-mode: forwards;
 }
+
+@mixin underline_animation {
+    position: relative;
+	padding-bottom: 2px;
+
+    &::before {
+        content: '';
+        
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -2px;
+        left: 0;
+    
+        background-color: $col-white;
+        
+        transition: transform .2s;
+        transform: scaleX(0);
+    }
+    
+    &:hover::before {
+        transform: scaleX(1);
+    }
+}
