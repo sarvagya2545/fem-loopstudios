@@ -40,8 +40,48 @@
 
 		padding: 3rem;
 		margin-bottom: 7rem;
+
+		& .box::before,
+		& .box::after,
+		& .box-helper::before,
+		& .box-helper::after {
+			content: '';
+			position: absolute;
+			background-color: $col-white;
+		}
 		
-        border: 2px solid $col-white;
+		& .box::before {
+			width: 0%;
+			height: 3px;
+			top: 0;
+			left: 0;
+			@include animateborder(topleft, $animate-border-time);
+		}
+		& .box::after {
+			width: 0%;
+			height: 3px;
+			bottom: 0;
+			right: 0;
+			@include animateborder(bottomright, $animate-border-time);
+		}
+		& .box-helper::before {
+			width: 3px;
+			height: 0%;
+			top: 0;
+			right: 0;
+			@include animateborder(topright, $animate-border-time);
+		}
+		& .box-helper::after {
+			width: 3px;
+			height: 0%;
+			bottom: 0;
+			left: 0;
+			@include animateborder(bottomleft, $animate-border-time);
+		}
+
+
+		
+        // border: 2px solid $col-white;
 
 		@media screen and (max-width: 700px) {
 			width: 100%;
@@ -64,9 +104,31 @@
 		list-style-type: none;
 
 		&-item {
+			position: relative;
+			padding-bottom: 2px;
+
 			a {
-				color: #fff;
+				color: $col-white;
 				text-decoration: none;
+			}
+
+			&::before {
+				content: '';
+				
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				bottom: -2px;
+				left: 0;
+
+				background-color: $col-white;
+				
+				transition: transform .2s;
+				transform: scaleX(0);
+			}
+
+			&:hover::before {
+				transform: scaleX(1);
 			}
 		}
 
@@ -107,7 +169,7 @@
 				text-transform: uppercase;
 				font-size: 3rem;
 				font-family: $font-1;
-				color: #fff;
+				color: $col-white;
 			}
 
 			&-item {

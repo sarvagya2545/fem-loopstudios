@@ -1,0 +1,65 @@
+// ANIMATE HERO SECTION BORDER
+@keyframes topleft {
+    0% {
+        width: 0%;
+    }
+
+    25% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes topright {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes bottomright {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    75% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bottomleft {
+    0% {
+        height: 0%;
+    }
+
+    75% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+

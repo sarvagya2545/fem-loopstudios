@@ -4,3 +4,9 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin animateborder($name, $duration) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode: forwards;
+}
