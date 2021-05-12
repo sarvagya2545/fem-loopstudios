@@ -29,6 +29,24 @@
         <li class="nav__list-item"><a href="#">Products</a></li>
         <li class="nav__list-item"><a href="#">Support</a></li>
       </ul>
+      <div class="nav__mobile">
+        <img src="./images/icon-hamburger.svg" alt="menu">
+        <div class="nav__mobile-wrapper">
+          <div class="nav__mobile-wrapper__top">
+            <div class="brand">
+              <img src="./images/logo.svg" alt="logo" class="brand__img">
+            </div>
+            <img src="./images/icon-close.svg" alt="close" class="close-icon">
+          </div>
+          <ul class="nav__mobile__list">
+            <li class="nav__mobile__list-item"><a href="#">About</a></li>
+            <li class="nav__mobile__list-item"><a href="#">Careers</a></li>
+            <li class="nav__mobile__list-item"><a href="#">Events</a></li>
+            <li class="nav__mobile__list-item"><a href="#">Products</a></li>
+            <li class="nav__mobile__list-item"><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="hero__heading">
       <div class="heading-primary">
@@ -54,60 +72,82 @@
     </section>
 
     <section class="creations">
-      <div class="creations__header">
         <h1 class="heading-secondary">
           Our creations
         </h1>
         <button class="btn">
           See all
         </button>
-      </div>
 
       <div class="creations__grid">
         <div class="creations__card">
-          <img src="./images/desktop/image-deep-earth.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-deep-earth.jpg">
+            <img src="./images/desktop/image-deep-earth.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             Deep earth
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-night-arcade.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-night-arcade.jpg">
+            <img src="./images/desktop/image-night-arcade.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             Night arcade
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-soccer-team.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-soccer-team.jpg">
+            <img src="./images/desktop/image-soccer-team.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             Soccer team VR
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-grid.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-grid.jpg">
+            <img src="./images/desktop/image-grid.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             The grid
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-from-above.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-from-above.jpg">
+            <img src="./images/desktop/image-from-above.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             From up above VR
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-pocket-borealis.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-pocket-borealis.jpg">
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             Pocket borealis
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-curiosity.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-curiosity.jpg">
+            <img src="./images/desktop/image-curiosity.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             The curiosity
           </div>
         </div>
         <div class="creations__card">
-          <img src="./images/desktop/image-fisheye.jpg" alt="creations" class="creations__card-bg">
+          <picture>
+            <source media="(max-width: 489px)" srcset="./images/mobile/image-fisheye.jpg">
+            <img src="./images/desktop/image-fisheye.jpg" alt="creations" class="creations__card-bg">
+          </picture>
           <div class="creations__card-text">
             Make it fisheye
           </div>
@@ -118,7 +158,6 @@
 
 
   <footer class="footer">
-    <div class="footer__top">
       <div class="brand">
         <img src="./images/logo.svg" alt="logo" class="brand__img">
       </div>
@@ -136,9 +175,7 @@
           <i class="fab fa-instagram"></i>
         </div>
       </div>
-    </div>
 
-    <div class="footer__bottom">
       <ul class="footer__links">
         <li class="footer__link-item">About</li>
         <li class="footer__link-item">Career</li>
@@ -149,7 +186,6 @@
       <div class="footer__copyright">
         © 2021 Loopstudios. All rights reserved.
       </div>
-    </div>
   </footer>
 
   <!-- About

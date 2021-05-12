@@ -1,13 +1,32 @@
 main {
     padding: 14rem 12rem 0;
+
+    @media screen and (max-width: 900px) {
+        padding: 8rem 8rem 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 4rem 4rem 0;
+    }
 }
 
 .copy {
     display: flex;
     position: relative;
+    align-items: center;
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+        text-align: center;
+    }
 
     &__img {
         width: 65%;
+        @media screen and (max-width: 1300px) {
+            width: 50%;
+            min-width: 400px;
+            height: auto;
+        }
     }
 
     &__text {
@@ -17,6 +36,15 @@ main {
         bottom: 0;
         right: 0;
         width: 50%;
+
+        @media screen and (max-width: 1300px) {
+            position: relative;
+            padding: 3rem;
+        }
+
+        @media screen and (max-width: 850px) {
+            width: 90%;
+        }
     }
 
     &__para {
@@ -26,13 +54,48 @@ main {
 
 .creations {
     margin: 20rem 0;
+    @media screen and (max-width: 900px) {
+        margin: 10rem 0;
+    }
 
-    &__header {
-        @include flex(row, space-between, center);
-        margin-bottom: 10rem;
+    display: grid;
+    grid-template-areas: 
+        "h . b"
+        "g g g"
+    ;
+    gap: 10rem;
+
+    @media screen and (max-width: 900px) {
+        gap: 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "h h ."
+            "g g g"
+            ". b ."
+        ;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-areas: 
+            "h h h"
+            "g g g"
+            "b b b"
+        ;
+    }
+
+    h1 {
+        grid-area: h;
+    }
+
+    .btn {
+        grid-area: b;
     }
 
     &__grid {
+        grid-area: g;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         align-items: center;
