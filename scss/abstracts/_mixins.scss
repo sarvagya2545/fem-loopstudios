@@ -5,6 +5,10 @@
     align-items: $align;
 }
 
+@mixin flex-center($dir) {
+    @include flex($dir, center, center);
+}
+
 @mixin animateborder($name, $duration) {
     animation-name: $name;
     animation-duration: $duration;

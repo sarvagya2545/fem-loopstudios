@@ -7,13 +7,14 @@
 	padding: 6rem 10rem;
 	position: relative;
 
-	@include flex(column, space-between, stretch);
+	@include flex(column, flex-start, stretch);
 
 	@media screen and (max-width: 700px) {
 		height: 100vh;
 		background: url("../../images/mobile/image-hero.jpg");
 		background-size: cover;
 		padding: 6rem 3rem;
+
 	}
 
 	&::before {
@@ -40,6 +41,7 @@
 
 		padding: 3rem;
 		margin-bottom: 7rem;
+		margin-top: auto;
 
 		& .box::before,
 		& .box::after,
@@ -92,12 +94,29 @@
 }
 
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flex(row, space-between, center);
 	z-index: 2;
+	position: fixed;
+	padding: 6rem 10rem;
+	left: 0;
+	right: 0;
 
+	@media screen and (max-width: 700px) {
+		padding: 6rem 3rem;
+	}
 
+	&.navbar-scrolled {
+		background-color: $col-black;
+		padding: 1rem 10rem;
+
+		@media screen and (max-width: 700px) {
+			padding: 1rem 3rem ;
+		}
+	}
+
+	& .brand {
+		@include flex-center(column);
+	}
 
 	&__list {
 		display: flex;
@@ -110,6 +129,7 @@
 			}
 
 			@include underline_animation;
+			@include flex-center(column);
 		}
 
 		&-item + &-item {
@@ -124,6 +144,11 @@
 	&__hamburger, &__close {
 		cursor: pointer;
 	}
+
+	&__hamburger {
+		@include flex-center(column);
+	}
+
 
 	&__mobile {
 
