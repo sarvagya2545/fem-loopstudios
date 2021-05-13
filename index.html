@@ -15,15 +15,16 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="js/menu.js" defer></script>
+  <script src="js/animateonscroll.js" defer></script>
 </head>
 <body>
 
   <header class="hero">
     <div class="nav">
-      <div class="brand">
+      <div class="brand fade fade-in-top">
         <img src="./images/logo.svg" alt="logo" class="brand__img">
       </div>
-      <ul class="nav__list">
+      <ul class="nav__list fade fade-in-top">
         <li class="nav__list-item"><a href="#">About</a></li>
         <li class="nav__list-item"><a href="#">Careers</a></li>
         <li class="nav__list-item"><a href="#">Events</a></li>
@@ -31,13 +32,13 @@
         <li class="nav__list-item"><a href="#">Support</a></li>
       </ul>
       <div class="nav__mobile">
-        <img src="./images/icon-hamburger.svg" alt="menu" id="menuOpen">
+        <img src="./images/icon-hamburger.svg" alt="menu" id="menuOpen" class="nav__hamburger">
         <div class="nav__mobile-wrapper">
           <div class="nav__mobile-wrapper__top">
             <div class="brand">
               <img src="./images/logo.svg" alt="logo" class="brand__img">
             </div>
-            <img src="./images/icon-close.svg" alt="close" class="close-icon" id="menuClose">
+            <img src="./images/icon-close.svg" alt="close" class="close-icon nav__close" id="menuClose">
           </div>
           <ul class="nav__mobile__list">
             <li class="nav__mobile__list-item"><a href="#">About</a></li>
@@ -49,8 +50,9 @@
         </div>
       </div>
     </div>
-    <div class="hero__heading">
-      <div class="heading-primary box">
+    <div class="hero__heading fade fade-in-top">
+      <div class="heading-primary">
+        <div class="box"></div>
         <div class="box-helper"></div>
         Immersive experiences that deliver
       </div>
@@ -59,8 +61,8 @@
 
   <main>
     <section class="copy">
-      <img src="./images/desktop/image-interactive.jpg" alt="Leader in interactive VR" class="copy__img">
-      <div class="copy__text">
+      <img src="./images/desktop/image-interactive.jpg" alt="Leader in interactive VR" class="copy__img fade fade-in-left">
+      <div class="copy__text fade fade-in-right">
         <h1 class="heading-secondary">
           The leader in interactive VR
         </h1>
@@ -82,7 +84,7 @@
         </button>
 
       <div class="creations__grid">
-        <div class="creations__card">
+        <div class="creations__card fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-deep-earth.jpg">
             <img src="./images/desktop/image-deep-earth.jpg" alt="creations" class="creations__card-bg">
@@ -91,7 +93,7 @@
             Deep earth
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-night-arcade.jpg">
             <img src="./images/desktop/image-night-arcade.jpg" alt="creations" class="creations__card-bg">
@@ -100,7 +102,7 @@
             Night arcade
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-soccer-team.jpg">
             <img src="./images/desktop/image-soccer-team.jpg" alt="creations" class="creations__card-bg">
@@ -109,7 +111,7 @@
             Soccer team VR
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-grid.jpg">
             <img src="./images/desktop/image-grid.jpg" alt="creations" class="creations__card-bg">
@@ -118,7 +120,7 @@
             The grid
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-from-above.jpg">
             <img src="./images/desktop/image-from-above.jpg" alt="creations" class="creations__card-bg">
@@ -127,7 +129,7 @@
             From up above VR
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-pocket-borealis.jpg">
             <img src="./images/desktop/image-pocket-borealis.jpg" alt="creations" class="creations__card-bg">
@@ -136,7 +138,7 @@
             Pocket borealis
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-curiosity.jpg">
             <img src="./images/desktop/image-curiosity.jpg" alt="creations" class="creations__card-bg">
@@ -145,7 +147,7 @@
             The curiosity
           </div>
         </div>
-        <div class="creations__card">
+        <div class="creations__card  fade fade-in-bottom">
           <picture>
             <source media="(max-width: 489px)" srcset="./images/mobile/image-fisheye.jpg">
             <img src="./images/desktop/image-fisheye.jpg" alt="creations" class="creations__card-bg">

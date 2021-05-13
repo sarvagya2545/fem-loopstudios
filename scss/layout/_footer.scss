@@ -61,6 +61,13 @@
     &__link-item {
         cursor: pointer;
         @include underline_animation;
+
+        &::before {
+            @media screen and (max-width: 700px) {
+                width: 10%;
+                left: 45%;
+            }
+        }
     }
 
     &__link-item + &__link-item {

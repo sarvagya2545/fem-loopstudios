@@ -63,3 +63,47 @@
     }
 }
 
+// animation on scroll: classes
+.fade {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+
+.fade-in-top {
+    opacity: 0;
+    transform: translateY(-50%);
+    
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom {
+    opacity: 0;
+    transform: translateY(50%);
+    
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50%);
+
+    &.appear {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50%);
+    
+    &.appear {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

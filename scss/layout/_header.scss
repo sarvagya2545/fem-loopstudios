@@ -121,6 +121,10 @@
 		}
 	}
 
+	&__hamburger, &__close {
+		cursor: pointer;
+	}
+
 	&__mobile {
 
 		&-wrapper {
