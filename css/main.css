@@ -228,7 +228,7 @@ body {
 
 .hero {
   height: 65rem;
-  background-image: url("images/desktop/image-hero.jpg");
+  background-image: url("../images/desktop/image-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   color: white;
@@ -252,7 +252,7 @@ body {
 @media screen and (max-width: 700px) {
   .hero {
     height: 100vh;
-    background-image: url("images/mobile/image-hero.jpg");
+    background-image: url("../images/mobile/image-hero.jpg");
     background-size: cover;
     padding: 6rem 3rem;
   }
